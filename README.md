@@ -17,14 +17,26 @@
 
 ### Built With
 
-At the moment the project is build with html5 and javascript by using the following libraries:
+At the moment the project is build with pure html and javascript by using the following libraries:
 
 * [Bootstrap](https://getbootstrap.com)
 * [Apollo](https://www.apollographql.com/)
-
+* [chartjs](https://www.chartjs.org/)
 
 <!-- ROADMAP -->
 ## Roadmap
+
+- [ ] Gas Price Calculator
+- [ ] Marketplace Trends 
+  - [x]	NFTs minted - done
+  - [x]	Auctions Started 
+  - [x]	Auctions Finalized
+  - [ ]	Auctions current running
+  - [ ] ...
+- [ ] Embeddable NFT Cards
+- [ ] Live Auction List 
+- [ ] ...
+
 
 <!-- CONTACT -->
 ## Contact
