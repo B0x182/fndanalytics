@@ -15,6 +15,14 @@
 ## About The Project
 
 
+### Built With
+
+At the moment the project is build with html5 and javascript by using the following libraries:
+
+* [Bootstrap](https://getbootstrap.com)
+* [Apollo](https://www.apollographql.com/)
+
+
 <!-- ROADMAP -->
 ## Roadmap
 
