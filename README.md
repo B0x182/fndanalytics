@@ -18,6 +18,8 @@ Showing live market data and statistics from the NFT
 <a href="https://etherscan.io/address/0xcDA72070E455bb31C7690a170224Ce43623d0B6f" target="_blank">marketplace</a> by fetching data from 
 <a href="https://thegraph.com/hosted-service/subgraph/f8n/fnd" target="_blank">subgraph</a>.
 
+<img src="images/screen_1.jpg">
+
 ### Built With
 
 At the moment the project is build with pure html and javascript by using the following libraries:
