@@ -33,13 +33,14 @@ At the moment the project is build with pure html and javascript by using the fo
 ## Roadmap
 
 - [ ] Gas Price Calculator
-- [ ] Marketplace Trends 
+- [ ] Marketplace trends 
   - [x]	NFTs minted - done
   - [x]	Auctions Started 
   - [x]	Auctions Finalized
   - [ ]	Auctions current running
   - [ ] ...
 - [ ] Embeddable NFT Cards
+- [ ] historical Data trends
 - [ ] Live Auction List 
 - [ ] ...
 
