@@ -34,9 +34,11 @@ At the moment the project is build with pure html and javascript by using the fo
 
 - [ ] Gas Price Calculator
 - [ ] Marketplace trends 
-  - [x]	NFTs minted - done
+  - [x]	NFTs minted
+  - [ ]	Auctions created
   - [x]	Auctions Started 
   - [x]	Auctions Finalized
+  - [ ]	ETH volume
   - [ ]	Auctions current running
   - [ ] ...
 - [ ] Embeddable NFT Cards
