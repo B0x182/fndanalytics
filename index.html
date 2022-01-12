@@ -14,10 +14,10 @@
 <div class="container " style="max-width: 720px">
  
 <div class="row align-items-center mt-3">
-        <div class="col-md-2">
-		  <svg  fill="none" viewBox="0 0 98 33" xmlns="http://www.w3.org/2000/svg" ><path clip-rule="evenodd" d="M64.894 16.456c0 9.088-7.368 16.456-16.457 16.456s-16.455-7.368-16.455-16.456S39.349 0 48.438 0s16.455 7.368 16.455 16.456zM16.902 1.567a.784.784 0 011.358 0L35.056 30.66a.784.784 0 01-.679 1.176H.785a.784.784 0 01-.679-1.176zM68.614.98c-.865 0-1.567.702-1.567 1.568v27.818c0 .866.702 1.567 1.567 1.567h27.819c.865 0 1.567-.701 1.567-1.567V2.547c0-.866-.702-1.568-1.567-1.568z" fill="currentColor" fill-rule="evenodd"></path></svg>
-		 </div>	
-        <div class="col-md-10">
+        <div class="col-md-3">
+		<img src="Gradient_Square.png" class="img-fluid" alt="Responsive image" >
+		   </div>	
+        <div class="col-md-9">
 		 <h1 class="text-center">Foundation.app analytics</h1>
 		</div>
 </div>
@@ -33,8 +33,22 @@
  
 <hr>
    
-<div class="row align-items-center mt-3">
-	<h2 class="text-center">coming soon...</h2>
+<!--finalizedMarketAuctions-->
+
+<div class="row"> 	
+	<h2>Market Volume ETH</h2> 
+	<p>The sum of ETH volumne of finalized auctions in the marketplace over the last 5 days.<br><br>
+	OwnerRevenueInETH; How much the owner (if not the creator) earned from the auction.<br>
+	CreatorRevenueInETH; How much the creator earned from the auction.<br>
+	FoundationRevenueInETH;How much Foundation earned from the auction.<br>
+	</p>	
+	<div class="d-flex justify-content-center" id = "finalizedMarketAuctionsSpinner">
+		<div class="spinner-border" role="status"></div>
+	</div>
+ </div>
+
+<div class="row">
+	<canvas id="finalizedMarketAuctionsChart"></canvas>
 </div>
 
 <hr>
@@ -51,15 +65,18 @@
         </div>
  </footer>
 	
-	
  </div>
-
-
 
 
  <!-- Bootstrap JS Bundle with Popper -->
  <script src="js/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-	
-	
+
+<script src="js/chartjs/3.7.0/chart.js"></script>
+<script src="js/apollo-client/1.9.0/apollo-client.min.js"></script>	
+
+<script type="text/javascript" src="js/main.js"></script>	
+<script type="text/javascript" src="js/fnd/fndanalytics.js"></script>
+
+
 </body>
 </html>
