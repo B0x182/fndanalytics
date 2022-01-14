@@ -39,6 +39,7 @@ At the moment the project is build with pure html and javascript by using the fo
   - [x]	Auctions Started 
   - [x]	Auctions Finalized
   - [ ]	ETH volume
+  - [ ]	add Private Sales
   - [ ]	Auctions current running
   - [ ] ...
 - [ ] Embeddable NFT Cards
