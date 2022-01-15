@@ -9,13 +9,11 @@
 </head>
 <body>
   
-
-
 <div class="container " style="max-width: 720px">
  
 <div class="row align-items-center mt-3">
         <div class="col-md-3">
-		<img src="images/Gradient_Square.png" class="img-fluid" alt="Responsive image" >
+		<img src="Gradient_Square.png" class="img-fluid" alt="Responsive image" >
 		   </div>	
         <div class="col-md-9">
 		 <h1 class="text-center">Foundation.app analytics</h1>
@@ -32,32 +30,45 @@
  </p>
  
 <hr>
-   
-<!--finalizedMarketAuctions-->
 
+<!--Market Volume ETH -->
 <div class="row"> 	
 	<h2>Market Volume ETH</h2> 
-	<p>The sum of ETH volumne of finalized auctions in the marketplace over the last 5 days.<br><br>
-	OwnerRevenueInETH; How much the owner (if not the creator) earned from the auction.<br>
-	CreatorRevenueInETH; How much the creator earned from the auction.<br>
-	FoundationRevenueInETH;How much Foundation earned from the auction.<br>
+	<p>The sum of ETH volumne of finalized auctions and private sales in the marketplace over the last 5 days.
 	</p>	
-	<div class="d-flex justify-content-center" id = "finalizedMarketAuctionsSpinner">
+	<div class="d-flex justify-content-center" id = "marketVolumeSpinner">
+		<div class="spinner-border" role="status"></div>
+	</div>
+ </div>
+<div class="row">
+	<canvas id="marketVolumeChart"></canvas>
+</div>
+ 
+
+<!--Market Stats -->
+<div class="row"> 	
+	<h2>Market Stats</h2> 
+	<p>Statistics from the marketplace over the last 5 days.
+	</p>	
+	<div class="d-flex justify-content-center" id = "marketStatsSpinner">
 		<div class="spinner-border" role="status"></div>
 	</div>
  </div>
 
 <div class="row">
-	<canvas id="finalizedMarketAuctionsChart"></canvas>
+	<canvas id="marketStatsChart"></canvas>
 </div>
 
 <hr>
+
 <footer>
         <div class="row">
             <div class="col-md-6">
                 <p>Copyright &copy; 2022 B0x182</p>
             </div>
             <div class="col-md-6 text-md-end">
+				v 2.0
+				<span class="text-muted mx-2">|</span> 
                 <a href="https://github.com/B0x182/fndanalytics" target="_blank"" class="text-dark">Github</a> 
                 <span class="text-muted mx-2">|</span> 
                 <a href="https://twitter.com/B0x182" target="_blank" class="text-dark">Twitter</a>
@@ -75,7 +86,7 @@
 <script src="js/apollo-client/1.9.0/apollo-client.min.js"></script>	
 
 <script type="text/javascript" src="js/main.js"></script>	
-<script type="text/javascript" src="js/fnd/fndanalytics.js"></script>
+<script type="text/javascript" src="js/fndanalytics.js"></script>
 
 
 </body>
