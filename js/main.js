@@ -12,7 +12,7 @@ window.onload = function (){
 
 
 getGASPriceHTMLTable().then((t) => {	
-		 document.getElementById("gasPriceTable").innerHTML="test";
+		 document.getElementById("gasPriceTable").innerHTML=t;
 		})
 
 //update all 20 sec
