@@ -10,6 +10,21 @@ window.onload = function (){
     getBarChartConfig()
   );
 
+
+getGASPriceHTMLTable().then((t) => {	
+		 document.getElementById("gasPriceTable").innerHTML=t;
+		})
+
+//update all 20 sec
+var intervalId = window.setInterval(function(){
+ 
+  getGASPriceHTMLTable().then((t) => {
+		
+		 document.getElementById("gasPriceTable").innerHTML=t;
+		})
+
+}, 20000);
+
 initFNDanalytics().then((r0) => {
  
 	getMarketVolume().then((r1) => {
@@ -26,5 +41,6 @@ initFNDanalytics().then((r0) => {
 		})
 	})
  })
+ 
 
 }
