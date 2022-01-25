@@ -58,15 +58,28 @@ img, video {
 
 <!--Gas Price -->
 <div class="row"> 	
-	<h2>FND gas ⛽ price</h2> 
+	<h2>live gas ⛽ price</h2> 
 	<p>Estimated gas prices (low) for FND. Gwei used for calculations provied by <a href="https://etherscan.io/gastracker" target="_blank">etherscan.io</a> api. 
 	</p>	
- </div>
-<div class="row">
- <div class="col" id ="gasPriceTable">
- </div>
 </div>
- 
+
+<div class="row align-items-center"> 
+<div class="col-md-2">
+next update:
+</div>
+<div class="col-md-10">
+  <div class="progress">
+	<div class="progress-bar" role="progressbar" id="progressbar" style="background-color: #DC04FE"  aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+ <div class="d-flex justify-content-center"  style="color: #DC04FE" id="gasPriceTableSpinner">
+	<div class="spinner-border" role="status"></div>
+ </div>
+ <div class="col" id ="gasPriceTable"></div>
+</div>	
 
 <!-- Showcase -->
 <div class="row"> 	
@@ -125,7 +138,7 @@ img, video {
                 <p>Copyright &copy; 2022 B0x182</p>
             </div>
             <div class="col-md-6 text-md-end">
-				v 2.2
+				v 2.3
 				<span class="text-muted mx-2">|</span> 
                 <a href="https://github.com/B0x182/fndanalytics" target="_blank"" class="text-dark">Github</a> 
                 <span class="text-muted mx-2">|</span> 
