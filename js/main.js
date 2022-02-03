@@ -1,12 +1,15 @@
 window.onload = function (){
 
-var _updateInt = 20000;
+var _updateInt = 31000;
 var _tickrate = 1000;
 
 
  getGASPriceHTMLTable().then((t) => {	
 		
-		 document.getElementById("gasPriceTable").innerHTML=t;
+		 document.getElementById("gasPriceTable").innerHTML=t.html;
+		 newPageTitle = t.gasavg + ' Gwei | FND analytics';
+         document.querySelector('title').textContent = newPageTitle;
+		 
 		 document.getElementById("gasPriceTableSpinner").remove();
 		 update();
   })
@@ -47,6 +50,10 @@ getNFTCardHTML("0x3b3ee1931dc30c1957379fac9aba94d1c48a5405-107617").then((c) => 
 getNFTCardHTML("0x3b3ee1931dc30c1957379fac9aba94d1c48a5405-121948").then((c) => {	
 		 document.getElementById("nftcard2").innerHTML=c;
 		})
+		
+getNFTCardHTML("0x3b3ee1931dc30c1957379fac9aba94d1c48a5405-116339").then((c) => {	
+		 document.getElementById("nftcard3").innerHTML=c;
+		})
 
 
 function update(){	
@@ -66,8 +73,13 @@ function update(){
 	 clearInterval(id);
 	
 		getGASPriceHTMLTable().then((t) => {
-		 document.getElementById("gasPriceTable").innerHTML=t;
-		 update();
+		
+		document.getElementById("gasPriceTable").innerHTML=t.html;
+		
+		newPageTitle = t.gasavg + ' Gwei | FND analytics';
+        document.querySelector('title').textContent = newPageTitle;
+		
+		update();
 		})
 		
       } else {
