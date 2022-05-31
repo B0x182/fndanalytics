@@ -17,6 +17,22 @@
     <link href="js/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 	<link href="js/fnd/fndnftcard.css" rel="stylesheet">
 	<link href="js/fontawesome/5.15.4/css/all.min.css" rel="stylesheet">
+	
+	<style>
+		
+		 @font-face {
+              font-family: "Foundation-Display";
+              src: url("fonts/Foundation-Display.woff2") format("woff2"),
+                url("fonts/Foundation-Display.woff") format("woff");
+
+            }
+			
+			p.fndf{
+				font-family: "Foundation-Display";
+				font-size: 60px;
+			}
+			
+	</style>
 </head>
 <body>
 
@@ -33,122 +49,14 @@
  
 <hr>
 
-<!-- Stats Cards -->
+<!-- div -->
 <div class="row">
+ <p class="fndf text-center">
+ ...UPDATES ... 
+ <br>
+ ...BACK SOON...
+ </p>
 
-<div class="card border-0 text-white col-md-4 mb-2">
-  <div class="card body" style="background: linear-gradient(45deg,#A0F501,#C1AE42);">
-    <h5 class="card-title">Market Volume</h5>
-	
-	<div class=" row d-flex justify-content-center mb-2" id="stats1sp">
-		<div class="spinner-border" role="status"></div>
-	</div>
-	
-	<div id="stats1"></div>
-  
-  </div> 
-</div>
-
-
-<div class="card border-0 text-white col-md-4 mb-2">
-  <div class="card body" style="background: linear-gradient(45deg,#E98578,#F6431B);">
-    <h5 class="card-title">NFTs minted</h5>
-	
-	<div class=" row d-flex justify-content-center mb-2" id="stats2sp">
-		<div class="spinner-border" role="status"></div>
-	</div>
-    
-	<div id="stats2"></div>
-	
-  </div> 
-</div>
-
-
-<div class="card border-0 text-white col-md-4 mb-2">
-  <div class="card body" style="background: linear-gradient(45deg,#D220F2,#EE0570);">
-    <h5 class="card-title">Auctions Started</h5>
-	
-	<div class=" row d-flex justify-content-center mb-2" id="stats3sp">
-		<div class="spinner-border" role="status"></div>
-	</div>
-    
-	<div id="stats3"></div>
-	
-  </div> 
-</div>
-
-</div>
-
-<hr>
-
-<!--Gas Price -->
-<div class="row"> 	
-	<h2>live gas ⛽ price</h2> 
-	<p>Estimated gas prices (low) for FND. Gwei used for calculations provided by <a href="https://etherscan.io/gastracker" target="_blank">etherscan.io</a> api. 
-	</p>	
-</div>
-
-<div class="row align-items-center"> 
-<div class="col-md-2">
-next update:
-</div>
-<div class="col-md-10">
-  <div class="progress">
-	<div class="progress-bar" role="progressbar" id="gasprogress" style="background-color: #DC04FE"  aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-</div>
-</div>
-
-<div class="row">
- <div class="d-flex justify-content-center"  style="color: #DC04FE" id="gasPriceTableSpinner">
-	<div class="spinner-border" role="status"></div>
- </div>
- <div class="col" id ="gasPriceTable"></div>
-</div>
- 
-
-<!-- Showcase -->
-<div class="row"> 	
-	<h2>Showcase</h2> 
-	<p>Embeddable NFT Cards for the marketplace. 
-	</p>	
- </div>
-
-<div class="row">
- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-		<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-		<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-        </ol>
-        
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-    
-			<div class="carousel-item active">
-				<div id="nftcard0"> </div> 
-            </div>
-            <div class="carousel-item">
-				<div id="nftcard1"> </div> 
-			</div>
-			<div class="carousel-item">
-				<div id="nftcard2"> </div> 
-			</div>
-			<div class="carousel-item">
-				<div id="nftcard3"> </div> 
-			</div>
-    
-        <!-- Carousel controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
- </div>	
 </div>
 
 
@@ -167,7 +75,7 @@ next update:
                 <p>Copyright &copy; 2022 B0x182</p>
             </div>
             <div class="col-md-6 text-md-end">
-				v 2.4.1
+				v 3.0
 				<span class="text-muted mx-2">|</span> 
                 <a href="https://github.com/B0x182/fndanalytics" target="_blank"" class="text-dark">Github</a> 
                 <span class="text-muted mx-2">|</span> 
@@ -182,13 +90,8 @@ next update:
  <!-- Bootstrap JS Bundle with Popper -->
  <script src="js/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
-<script src="js/chartjs/3.7.0/chart.js"></script>
-<script src="js/apollo-client/1.9.0/apollo-client.min.js"></script>	
 
-<script type="text/javascript" src="js/main.js"></script>	
-<script type="text/javascript" src="js/fnd/fndgasprice.js"></script>
-<script type="text/javascript" src="js/fnd/fndnftcard.js"></script> 
-<script type="text/javascript" src="js/fnd/fndanalytics.js"></script> 
+
 
 </body>
 </html>
